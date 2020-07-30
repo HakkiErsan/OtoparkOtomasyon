@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ABC13F80-BF7D-4AC5-8EF5-7F2A0FFEF0E3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OtoparkOtomasyonu</RootNamespace>
+    <AssemblyName>OtoparkOtomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnaSayfa.Designer.cs">
+      <DependentUpon>frmAnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAraçOtoparkKaydı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAraçOtoparkKaydı.Designer.cs">
+      <DependentUpon>frmAraçOtoparkKaydı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAraçOtoparkYerleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAraçOtoparkYerleri.Designer.cs">
+      <DependentUpon>frmAraçOtoparkYerleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAraçOtoparkÇıkışı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAraçOtoparkÇıkışı.Designer.cs">
+      <DependentUpon>frmAraçOtoparkÇıkışı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMarka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMarka.Designer.cs">
+      <DependentUpon>FrmMarka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSatış.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSatış.Designer.cs">
+      <DependentUpon>frmSatış.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSeri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSeri.Designer.cs">
+      <DependentUpon>FrmSeri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTarifeGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTarifeGuncelle.Designer.cs">
+      <DependentUpon>FrmTarifeGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAnaSayfa.resx">
+      <DependentUpon>frmAnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAraçOtoparkKaydı.resx">
+      <DependentUpon>frmAraçOtoparkKaydı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAraçOtoparkYerleri.resx">
+      <DependentUpon>frmAraçOtoparkYerleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAraçOtoparkÇıkışı.resx">
+      <DependentUpon>frmAraçOtoparkÇıkışı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMarka.resx">
+      <DependentUpon>FrmMarka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSatış.resx">
+      <DependentUpon>frmSatış.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSeri.resx">
+      <DependentUpon>FrmSeri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTarifeGuncelle.resx">
+      <DependentUpon>FrmTarifeGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\otopark_yerleri.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arac_giris.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arac_cikis.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ana_menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kazanc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marka.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seriler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guncelleme.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
