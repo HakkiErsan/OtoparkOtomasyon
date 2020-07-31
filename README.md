@@ -14,7 +14,7 @@
 
 SQL Server Management Studio, Visual Studio
 
-## Projeyi çalıştırmadan önce,
+## Projeyi çalıştırmadan önce
 
 .bak uzantısı ile paylaşılan veritabanının restore işlemi yapılmalıdır.
 
