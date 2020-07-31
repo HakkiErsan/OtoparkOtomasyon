@@ -1,4 +1,4 @@
-# Otopark OtomasyonU
+# Otopark Otomasyonu
 
 - Araç giriş-çıkış işlemlerinin kayıt altında tutulabildiği,
 
